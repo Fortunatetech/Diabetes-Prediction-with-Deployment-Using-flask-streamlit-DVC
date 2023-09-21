@@ -68,9 +68,8 @@ class DataPreprocessing:
             logging.info('Cleaned trained data saved')
             test_df.to_csv(self.preprocessing_config.test_data_path_cleaned,index=False,header=True)
             logging.info('Cleaned test data saved')
-
+            logging.info("data Preprocessing completed")  
             return train_df, test_df
-            logging.info("data Preprocessing completed")        
-        
+                         
         except Exception as e:
             raise CustomException(e,sys)

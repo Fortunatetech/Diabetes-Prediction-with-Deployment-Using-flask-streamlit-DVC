@@ -6,7 +6,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from src.components.data_prepprocessing import DataPreprocessing
-#from src.components.model_trainer import  ModelTrainer
+from src.components.model_trainer import  ModelTrainer
+from src.components.data_transformation import DataTransformation
 #from src.pipelines.predict_pipeline import PredictPipeline
 
 @dataclass
@@ -51,12 +52,12 @@ if __name__=="__main__":
     raw_data_ingestion=obj.initiate_data_ingestion()
 
     obj2= DataPreprocessing()
-    raw_arr=obj2.initiate_data_preprocessing()
+    raw_arr = obj2.initiate_data_preprocessing()
 
-    #obj3=DataTransformation()
-    #train_arr,test_arr,obj_file_path=obj3.inititate_data_transformation()
-   
-    #obj4=ModelTrainer()
-    #print(obj4.initiate_model_trainer(train_arr,test_arr))
+    obj3=DataTransformation()
+    train_arr,test_arr,obj_file_path=obj3.inititate_data_transformation()
+
+    obj4=ModelTrainer()
+    print(obj4.initiate_model_trainer( train_arr,test_arr))
 
 
