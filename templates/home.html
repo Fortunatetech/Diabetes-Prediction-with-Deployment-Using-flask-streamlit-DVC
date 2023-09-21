@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diabetes Prediction</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #fff;
+      }
+
+      .container {
+        width: 500px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .form-group {
+        margin-bottom: 10px;
+      }
+
+      .label {
+        display: inline-block;
+        width: 100px;
+        font-weight: bold;
+      }
+
+      .input {
+        width: 200px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .button {
+        width: 100px;
+        margin-top: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .results {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Diabetes Prediction</h1>
+
+      <form action="/predict" method="post">
+        <div class="form-group">
+          <label>Pregnancies:</label>
+          <input type="number" name="pregnancies" class="input" />
+        </div>
+        <div class="form-group">
+          <label>Glucose:</label>
+          <input type="number" name="glucose" class="input" />
+        </div>
+        <div class="form-group">
+          <label>Blood Pressure:</label>
+          <input type="number" name="blood_pressure" class="input" />
+        </div>
+        <div class="form-group">
+          <label>Skin Thickness:</label>
+          <input type="number" name="skin_thickness" class="input" />
+        </div>
+        <div class="form-group">
+          <label>Insulin:</label>
+          <input type="number" name="insulin" class="input" />
+        </div>
+        <div class="form-group">
+          <label>BMI:</label>
+          <input type="number" name="bmi" class="input" />
+        </div>
+        <div class="form-group">
+          <label>Diabetes Pedigree Function:</label>
+          <input
+            type="number"
+            name="diabetes_pedigree_function"
+            class="input"
+          />
+        </div>
+        <div class="form-group">
+          <label>Age:</label>
+          <input type="number" name="age" class="input" />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="button">Predict</button>
+        </div>
+      </form>
+
+      <div class="results">
+        <h2>Prediction Results</h2>
+        <p id="prediction"></p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -2,10 +2,8 @@ import os
 import sys
 from dataclasses import dataclass
 
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import GaussianNB
-from sklearn.ensemble import VotingClassifier
 from catboost import CatBoostClassifier
 
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
@@ -38,53 +36,34 @@ class ModelTrainer:
             logging.info("Done Spliting training and test input data")
             logging.info("Exploring the classifier algorithms")
             models = {
-                "Random Forest": RandomForestClassifier(),
                 "Logistic Regression": LogisticRegression(),
                 "Naive bayes": GaussianNB(),
-                "Voting Classifier": VotingClassifier(estimators=[('lr', LogisticRegression()), ('rf', RandomForestClassifier()), ('gnb', GaussianNB())]),
                 "CatBoost Classifier": CatBoostClassifier(),
             }
-            # params={
-            #     "Decision Tree": {
-            #         'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
-            #         # 'splitter':['best','random'],
-            #         # 'max_features':['sqrt','log2'],
-            #     },
-            #     "Random Forest":{
-            #         # 'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
-                 
-            #         # 'max_features':['sqrt','log2',None],
-            #         'n_estimators': [8,16,32,64,128,256]
-            #     },
-            #     "Gradient Boosting":{
-            #         # 'loss':['squared_error', 'huber', 'absolute_error', 'quantile'],
-            #         'learning_rate':[.1,.01,.05,.001],
-            #         'subsample':[0.6,0.7,0.75,0.8,0.85,0.9],
-            #         # 'criterion':['squared_error', 'friedman_mse'],
-            #         # 'max_features':['auto','sqrt','log2'],
-            #         'n_estimators': [8,16,32,64,128,256]
-            #     },
-            #     "Linear Regression":{},
-            #     "XGBRegressor":{
-            #         'learning_rate':[.1,.01,.05,.001],
-            #         'n_estimators': [8,16,32,64,128,256]
-            #     },
-            #     "CatBoosting Regressor":{
-            #         'depth': [6,8,10],
-            #         'learning_rate': [0.01, 0.05, 0.1],
-            #         'iterations': [30, 50, 100]
-            #     },
-            #     "AdaBoost Regressor":{
-            #         'learning_rate':[.1,.01,0.5,.001],
-            #         # 'loss':['linear','square','exponential'],
-            #         'n_estimators': [8,16,32,64,128,256]
-            #     }
-                
-            # }
+            params= {
+
+                             'Logistic Regression': {
+                            "penalty": ['l1', 'l2'],
+                            'C': [0.01, 0.1, 1.0],
+                            'max_iter': [100, 200, 300]
+                        },
+                        
+
+                        'Naive bayes': {},
+
+                        'CatBoost Classifier': {
+                            'iterations': [100, 200],  # Number of boosting iterations
+                            'learning_rate': [0.01, 0.1, 1.0],  # Learning rate
+                            'depth': [6, 8, 10],  # Depth of the trees
+                            'l2_leaf_reg': [1, 3, 5],  # L2 regularization coefficient
+                            }
+                     }       
+           
             logging.info("Evaluating classifier algorithms")
             model_report:dict=evaluate_models(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,
-                                             models=models)
-            
+                                             models=models,param=params)
+            print(model_report)
+            logging.info("choosing best classifier algorithm")
             ## To get best model score from dict
             best_model_score = max(sorted(model_report.values()))
 
@@ -108,10 +87,6 @@ class ModelTrainer:
 
             r2_square = accuracy_score(y_test, predicted)
             return r2_square,best_model_name
-            
-
-
-
-            
+                       
         except Exception as e:
             raise CustomException(e,sys)

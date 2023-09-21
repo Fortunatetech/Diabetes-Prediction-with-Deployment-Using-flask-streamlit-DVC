@@ -11,7 +11,7 @@ class PredictPipeline:
 
     def predict(self,features):
         try:
-            model_path=os.path.join("artifacts","model.pkl")
+            model_path=os.path.join("artifacts","classifier.pkl")
             preprocessor_path=os.path.join("artifacts","preprocessor.pkl")
             model=load_object(file_path=model_path)
             preprocessor=load_object(file_path=preprocessor_path)
@@ -23,61 +23,46 @@ class PredictPipeline:
             raise CustomException(e,sys)
 
 
-
 class CustomData:
     def __init__(  self,
-        Airline: str,
-        Source: str,
-        Destination,
-        Total_Stops: str,
-        Journey_day: int,
-        Journey_month: int,
-        Journey_year,
-        hours,
-        minutes,
-        Arrival_hour,
-        Arrival_min,
-        duration_hours,
-        duration_mins
+        Pregnancies: int,
+        Glucose: int,
+        BloodPressure: int,
+        SkinThickness: int,
+        Insulin: int,
+        BMI: float,
+        DiabetesPedigreeFunction: float,
+        Age: int
         ):
 
-        self.Airline = Airline
+        self.Pregnancies = Pregnancies
 
-        self.Source = Source
+        self.Glucose = Glucose
 
-        self.Destination = Destination
+        self.BloodPressure = BloodPressure
 
-        self.Total_Stops = Total_Stops
+        self.SkinThickness = SkinThickness
 
-        self. Journey_day =  Journey_day
+        self.Insulin = Insulin
 
-        self.Journey_month = Journey_month
+        self.BMI =  BMI
 
-        self.Journey_year = Journey_year
-        self.hours = hours
-        self.minutes = minutes
-        self.Arrival_hour = Arrival_hour
-        self.Arrival_min = Arrival_min
-        self.duration_hours = duration_hours
-        self.duration_mins= duration_mins
+        self.DiabetesPedigreeFunction = DiabetesPedigreeFunction
 
+        self.Age = Age
+       
     def get_data_as_data_frame(self):
         try:
             custom_data_input_dict = {
-                "Airline": [self.Airline],
-                "Source": [self.Source],
-                "Destination": [self.Destination],
-                "Total_Stops": [self.Total_Stops],
-                "Journey_day": [self.Journey_day],
-                "Journey_month": [self.Journey_month],
-                "Journey_year": [self.Journey_year],
-                "hours": [self.hours],
-                "minutes": [self.minutes],
-                "Arrival_hour": [self.Arrival_hour],
-                "Arrival_min": [self.Arrival_min],
-                "duration_hours": [self.duration_hours],
-                "duration_mins": [self.duration_mins],
-                
+                "Pregnancies": [self.Pregnancies],
+                "Glucose": [self.Glucose],
+                "BloodPressure": [self.BloodPressure],
+                'SkinThickness': [self.SkinThickness],
+                "Insulin": [self.Insulin],
+                "BMI": [self.BMI],
+                "DiabetesPedigreeFunction": [self.DiabetesPedigreeFunction],
+                "Age": [self.Age]
+                               
             }
 
             return pd.DataFrame(custom_data_input_dict)
