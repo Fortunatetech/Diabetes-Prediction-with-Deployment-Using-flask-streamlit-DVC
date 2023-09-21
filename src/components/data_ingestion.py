@@ -5,9 +5,7 @@ from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
-#from src.components.data_transformation import DataTransformation
-#from src.components.data_transformation import DataTransformationConfig
-#from src.components.data_prepprocessing import DataCleaning
+from src.components.data_prepprocessing import DataPreprocessing
 #from src.components.model_trainer import  ModelTrainer
 #from src.pipelines.predict_pipeline import PredictPipeline
 
@@ -52,8 +50,8 @@ if __name__=="__main__":
     obj=DataIngestion()
     raw_data_ingestion=obj.initiate_data_ingestion()
 
-    #obj2=DataCleaning()
-    #raw_arr=obj2.initiate_data_cleaning()
+    obj2= DataPreprocessing()
+    raw_arr=obj2.initiate_data_preprocessing()
 
     #obj3=DataTransformation()
     #train_arr,test_arr,obj_file_path=obj3.inititate_data_transformation()
