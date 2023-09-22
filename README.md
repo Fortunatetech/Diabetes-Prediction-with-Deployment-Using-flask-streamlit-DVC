@@ -1,4 +1,4 @@
-🩺 Diabetes Prediction App 📊
+## 🩺 Diabetes Prediction App 📊
 
 Welcome to the Diabetes Prediction App repository! This project encompasses the design, implementation, development, and deployment of a cutting-edge application that empowers healthcare professionals and individuals to predict the likelihood of diabetes based on crucial health parameters.
 
@@ -34,7 +34,7 @@ Check out our codebase to see how we're making strides in diabetes prediction.
 This project is a collaborative effort of dedicated individuals who are passionate about leveraging technology for better healthcare outcomes.
 
 📧 **Contact**:
-For inquiries, suggestions, or collaborations, please reach out to [Your Contact Information].
+For inquiries, suggestions, or collaborations, please reach out to ayodeleayodeji250@gmail.com
 
 Join us on this journey to create a positive impact on healthcare through predictive technology. Together, we can make a difference in the fight against diabetes!
 
