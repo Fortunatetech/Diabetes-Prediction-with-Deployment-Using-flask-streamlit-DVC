@@ -1,0 +1,6 @@
+Model,Accuracy
+Logistic Regression,0.7753623188405797
+Voting Classifier,0.7608695652173914
+GaussianNB,0.7536231884057971
+Random Forest Classifier,0.7536231884057971
+CatBoost Classifier,0.7536231884057971
