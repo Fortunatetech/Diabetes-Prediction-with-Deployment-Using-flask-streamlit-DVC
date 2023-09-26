@@ -1,4 +1,3 @@
-````markdown
 # Diabetes Prediction App
 
 ![App Screenshot](screenshot.png)
@@ -46,7 +45,6 @@ Before running the app, make sure you have the following prerequisites installed
    ```bash
    git clone https://github.com/Fortunatetech/Diabetes-Prediction-with-Deployment-Using-flask-streamlit-DVC.git
    ```
-````
 
 2. Navigate to the project directory:
 
@@ -113,4 +111,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Ayodele Ayodeji
 - LinkedIn: [Connect with me](https://www.linkedin.com/in/ayo-ayodeji/)
-- Email: your.email@example.com
+- Email: ayodeleayodeji250@gmail.com
