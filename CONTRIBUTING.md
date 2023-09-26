@@ -45,7 +45,7 @@ We welcome contributions from the community to improve the Diabetes Prediction A
 
 ### Setting Up the Development Environment
 
-To set up a local development environment, follow the installation instructions provided in the project's [README](../../README.md).
+To set up a local development environment, follow the installation instructions provided in the project's [README](README.md).
 
 ### Forking the Repository
 
@@ -101,22 +101,11 @@ Please follow the code style guidelines defined in the project's [style guide](S
 
 ## License
 
-By contributing to this project, you agree that your contributions will be licensed under the project's [MIT License](LICENSE).
+By contributing to this project, you agree that your contributions will be licensed under the project's [Apache License 2.0](LICENSE).
 
 ---
 
 Thank you for your contributions to the Diabetes Prediction App! Your efforts are greatly appreciated.
 
-```
-
-Please note the following:
-
-- Customize the links to your specific repository issues, README, and other relevant documents.
-- Replace `feature-name` with an appropriate branch name when creating a new branch.
-- Mention any code style guidelines or linting rules specific to your project in the `Code Style` section.
-- Make sure you have a `LICENSE` file with the project's license terms.
-- Create a `CODE_OF_CONDUCT.md` file with your project's code of conduct if you haven't already.
-
-Feel free to adapt and expand these guidelines to suit your project's specific needs.
 ```
 ````

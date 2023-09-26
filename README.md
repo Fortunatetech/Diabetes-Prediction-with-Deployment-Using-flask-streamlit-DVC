@@ -105,10 +105,11 @@ Contributions are welcome! Please read our [Contribution Guidelines](CONTRIBUTIN
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 LICENSE - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
 - Ayodele Ayodeji
 - LinkedIn: [Connect with me](https://www.linkedin.com/in/ayo-ayodeji/)
+- Twitter: [Connect with me](https://twitter.com/Ayo_dataanalyst)
 - Email: ayodeleayodeji250@gmail.com
