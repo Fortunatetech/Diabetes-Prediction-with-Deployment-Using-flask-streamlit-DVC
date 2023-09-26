@@ -1,6 +1,11 @@
 # Diabetes Prediction App
 
+<<<<<<< HEAD
 ![Alt text](<diabete Pic-1.png>)
+=======
+![App Screenshot](![Uploading diabete Pic.png…]()
+)
+>>>>>>> 73be1c294929abe6cf93584fac2a0912689b961e
 
 ## Table of Contents
 
