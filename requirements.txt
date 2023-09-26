@@ -4,6 +4,7 @@ numpy
 matplotlib
 seaborn
 lightgbm
+catboost
 scikit-learn
 streamlit
 joblib
