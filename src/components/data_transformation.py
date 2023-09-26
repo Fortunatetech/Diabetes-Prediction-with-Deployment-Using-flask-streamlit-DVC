@@ -54,8 +54,7 @@ class DataTransformation:
         try:
 
             train_df=pd.read_csv("artifacts/train_cleaned.csv")
-            test_df=pd.read_csv("artifacts/test_cleaned.csv")
-            #train_set,test_set=train_test_split(cleaned_data,test_size=0.2,random_state=42)   
+            test_df=pd.read_csv("artifacts/test_cleaned.csv")   
 
             logging.info("Read train and test data completed")
 

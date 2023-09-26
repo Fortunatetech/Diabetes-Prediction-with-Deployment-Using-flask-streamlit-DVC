@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from src.components.data_prepprocessing import DataPreprocessing
 from src.components.model_trainer import  ModelTrainer
 from src.components.data_transformation import DataTransformation
-#from src.pipelines.predict_pipeline import PredictPipeline
+from src.pipelines.predict_pipeline import PredictPipeline
 
 @dataclass
 class DataIngestionConfig:
