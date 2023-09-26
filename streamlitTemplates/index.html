@@ -1,98 +1,185 @@
-<header>
-  <h1>Welcome to the Diabetes Prediction App</h1>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diabetes Prediction App</title>
+    <style>
+      /* Reset some default styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+      }
 
-<!-- Prediction Page Button -->
-<a href="/predictdata" class="btn btn-primary" id="predict-button"
-  >Prediction Page</a
->
+      /* Header styles */
+      header {
+        background-image: url("your-image.jpg"); /* Add your background image URL */
+        background-size: cover;
+        padding: 100px 0;
+        text-align: center;
+      }
 
-<section>
-  <!-- About This Project -->
-  <h2>About This Project</h2>
-  <p>
-    Explore our Diabetes Prediction Project, designed to provide accurate
-    predictions for diabetes risk. This tool empowers individuals to assess
-    their diabetes risk based on their health data.
-  </p>
-</section>
+      header h1 {
+        color: #007bff; /* Health sector blue color */
+        font-size: 36px;
+      }
 
-<section>
-  <!-- Key Features -->
-  <h2>Key Features</h2>
-  <ul>
-    <li>Input Health Data and Get Real-time Predictions</li>
-    <li>Interactive Dashboard</li>
-    <li>Easy-to-Use Interface</li>
-  </ul>
-</section>
+      header p {
+        color: #333;
+        font-size: 18px;
+      }
 
-<section>
-  <!-- How to Use -->
-  <h2>How to Use</h2>
-  <ol>
-    <li>
-      Navigate to the prediction page by clicking the "Prediction Page" button
-      above.
-    </li>
-    <li>Enter your health data as requested in the form.</li>
-    <li>
-      Click the "Get Prediction" button to receive real-time diabetes risk
-      predictions.
-    </li>
-  </ol>
-</section>
+      /* Container styles */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
 
-<section>
-  <!-- Info About Input Features -->
-  <h2>Info About Input Features</h2>
-  <ul>
-    <li>Pregnancies: Number of pregnancies (integer).</li>
-    <li>Glucose: Fasting blood glucose level (mg/dL) (float).</li>
-    <li>Blood Pressure: Resting blood pressure (mm Hg) (integer).</li>
-    <li>Skin Thickness: Skinfold thickness (mm) (integer).</li>
-    <li>Insulin: Fasting serum insulin level (mu U/ml) (integer).</li>
-    <li>BMI (Body Mass Index): Current BMI (kg/m²) (float).</li>
-    <li>
-      Diabetes Pedigree Function: Diabetes pedigree function score (float).
-    </li>
-    <li>Age: Age in years (integer).</li>
-  </ul>
-</section>
+      /* Section styles */
+      section {
+        margin-bottom: 30px;
+        padding: 20px;
+      }
 
-<section>
-  <!-- Sample Data -->
-  <h2>Sample Data</h2>
-  <p>
-    For your convenience, you can download a sample dataset
-    <a
-      href="https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset"
-      target="_blank"
-      >here</a
-    >.
-  </p>
-</section>
+      h2 {
+        font-size: 24px;
+        color: #007bff; /* Health sector blue color */
+      }
 
-<section>
-  <!-- Explore the Code -->
-  <h2>Explore the Code</h2>
-  <p>
-    Visit our
-    <a href="https://github.com/yourusername/your-repo" target="_blank"
-      >GitHub repository</a
-    >
-    to explore the code and documentation.
-  </p>
-</section>
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
 
-<footer>
-  <p>
-    &copy; 2023 Ayodele Ayodeji. Connect with me on
-    <a
-      href="https://www.linkedin.com/in/ayo-ayodeji/"
-      target="_blank"
-      class="linkedin"
-      >LinkedIn</a
-    >
-  </p>
-</footer>
+      /* Button styles */
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #007bff; /* Health sector blue color */
+        color: #fff;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #0056b3; /* Slightly darker blue on hover */
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .linkedin {
+        color: #007bff; /* Health sector blue color */
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Diabetes Prediction App</h1>
+      <p>Empowering you with accurate predictions for diabetes risk.</p>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>About This Project</h2>
+        <p>
+          Explore our Diabetes Prediction Project, designed to provide accurate
+          predictions for diabetes risk. This tool empowers individuals to
+          assess their diabetes risk based on their health data.
+        </p>
+      </section>
+
+      <section>
+        <h2>Key Features</h2>
+        <ul>
+          <li>Input Health Data and Get Real-time Predictions</li>
+          <li>Interactive Dashboard</li>
+          <li>Easy-to-Use Interface</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How to Use</h2>
+        <ol>
+          <li>
+            Navigate to the prediction page by clicking the "Prediction Page"
+            button below.
+          </li>
+          <li>Enter your health data as requested in the form.</li>
+          <li>
+            Click the "Get Prediction" button to receive real-time diabetes risk
+            predictions.
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Info About Input Features</h2>
+        <ul>
+          <li>Pregnancies: Number of pregnancies (integer).</li>
+          <li>Glucose: Fasting blood glucose level (mg/dL) (float).</li>
+          <li>Blood Pressure: Resting blood pressure (mm Hg) (integer).</li>
+          <li>Skin Thickness: Skinfold thickness (mm) (integer).</li>
+          <li>Insulin: Fasting serum insulin level (mu U/ml) (integer).</li>
+          <li>BMI (Body Mass Index): Current BMI (kg/m²) (float).</li>
+          <li>
+            Diabetes Pedigree Function: Diabetes pedigree function score
+            (float).
+          </li>
+          <li>Age: Age in years (integer).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sample Data</h2>
+        <p>
+          For your convenience, you can download a sample dataset
+          <a
+            href="https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset"
+            target="_blank"
+            >here</a
+          >.
+        </p>
+      </section>
+
+      <section>
+        <h2>Explore the Code</h2>
+        <p>
+          Visit our
+          <a
+            href="https://github.com/yourusername/your-repo"
+            target="_blank"
+            class="linkedin"
+            >GitHub repository</a
+          >
+          to explore the code and documentation.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2023 Ayodele Ayodeji. Connect with me on
+        <a
+          href="https://www.linkedin.com/in/ayo-ayodeji/"
+          target="_blank"
+          class="linkedin"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
