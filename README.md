@@ -1,6 +1,6 @@
 # Diabetes Prediction App
 
-![App Screenshot](screenshot.png)
+![App Screenshot](project demo\diabete Pic.png)
 
 ## Table of Contents
 
@@ -91,9 +91,9 @@ For your convenience, you can download a sample dataset [here](https://www.kaggl
 
 ## Real-time Demo
 
-![Demo](demo.gif)
+![Demo](project demo\diabete video demo.mp4)
 
-[Watch the demo video](https://www.example.com/demo-video)
+[Watch the demo video](project demo\diabete video demo.mp4)
 
 ## Explore the Code
 
