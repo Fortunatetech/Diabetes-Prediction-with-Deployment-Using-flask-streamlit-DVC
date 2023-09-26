@@ -1,6 +1,6 @@
 # Diabetes Prediction App
 
-# ![Alt text](![<diabete Pic-1.png>](<diabete Pic.png>))
+# ![Alt text](<diabete Pic.png>)
 
 ## Table of Contents
 
