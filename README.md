@@ -2,9 +2,6 @@
 
 # ![Alt text](<diabete Pic-1.png>)
 
-![App Screenshot](![Uploading diabete Pic.png…]()
-)
-
 ## Table of Contents
 
 - [About](#about)
