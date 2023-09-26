@@ -1,15 +1,10 @@
 # Diabetes Prediction App
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-![Alt text](<diabete Pic-1.png>)
-=======
+# ![Alt text](<diabete Pic-1.png>)
+
 ![App Screenshot](![Uploading diabete Pic.png…]()
 )
->>>>>>> 73be1c294929abe6cf93584fac2a0912689b961e
 
-=======
->>>>>>> 496bdad3a82ceaea321072dcb227d3f641a6ce08
 ## Table of Contents
 
 - [About](#about)
@@ -99,6 +94,7 @@ For your convenience, you can download a sample dataset [here](https://www.kaggl
 
 ## Real-time Demo
 
+https://github.com/Fortunatetech/Diabetes-Prediction-with-Deployment-Using-flask-streamlit-DVC/assets/104451288/7758d3e3-fdee-4b1a-8035-fb8c24f84a43
 
 ## Explore the Code
 
