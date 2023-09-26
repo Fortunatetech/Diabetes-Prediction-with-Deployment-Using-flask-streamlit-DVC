@@ -1,6 +1,7 @@
 # Diabetes Prediction App
 
-![App Screenshot](project demo\diabete Pic.png)
+![App Screenshot](![Uploading diabete Pic.png…]()
+)
 
 ## Table of Contents
 
