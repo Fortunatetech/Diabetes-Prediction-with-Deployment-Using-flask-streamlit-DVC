@@ -88,7 +88,7 @@ The features required for diabetes risk prediction are as follows:
 For your convenience, you can download a sample dataset [here](https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset).
 
 ## Real-time Demo
-
+https://github.com/Fortunatetech/Diabetes-Prediction-with-Deployment-Using-flask-streamlit-DVC/assets/104451288/7758d3e3-fdee-4b1a-8035-fb8c24f84a43
 
 ## Explore the Code
 
