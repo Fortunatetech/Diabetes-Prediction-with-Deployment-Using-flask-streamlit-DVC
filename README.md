@@ -1,8 +1,5 @@
 # Diabetes Prediction App
 
-![App Screenshot](![Uploading diabete Pic.png…]()
-)
-
 ## Table of Contents
 
 - [About](#about)
@@ -92,9 +89,6 @@ For your convenience, you can download a sample dataset [here](https://www.kaggl
 
 ## Real-time Demo
 
-![Demo](project demo\diabete video demo.mp4)
-
-[Watch the demo video](project demo\diabete video demo.mp4)
 
 ## Explore the Code
 
