@@ -4,4 +4,7 @@ matplotlib
 seaborn
 lightgbm
 scikit-learn
+streamlit
+joblib
+dill
 -e .

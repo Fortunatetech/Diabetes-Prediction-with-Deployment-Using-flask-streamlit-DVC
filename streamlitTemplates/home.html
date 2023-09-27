@@ -1,0 +1,136 @@
+<!-- Form Container -->
+<div class="container form-container">
+  <div class="col-sm-6">
+    <div class="form-card">
+      <h2 class="form-title">Check Your Diabetes Status here</h2>
+      <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <!-- Pregnancies -->
+        <div class="form-input">
+          <h6>How many pregnancies have you had?</h6>
+          <input
+            type="number"
+            name="pregnancies"
+            min="0"
+            placeholder="Enter the number of pregnancies"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- Glucose level -->
+        <div class="form-input">
+          <h6>Please enter your fasting blood glucose level (mg/dL)?</h6>
+          <input
+            type="number"
+            name="glucose"
+            min="44"
+            max="199"
+            step="1"
+            placeholder="Enter the glucose level"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- Blood Pressure -->
+        <div class="form-input">
+          <h6>What is your resting blood pressure (mm Hg)?</h6>
+          <input
+            type="number"
+            name="blood_pressure"
+            min="24"
+            max="122"
+            step="1"
+            placeholder="Enter the blood pressure"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- Skin Thickness -->
+        <div class="form-input">
+          <h6>Please input your skinfold thickness (mm)</h6>
+          <input
+            type="number"
+            name="skin_thickness"
+            min="24"
+            max="122"
+            step="1"
+            placeholder="Enter the skinfold thickness"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- Insulin -->
+        <div class="form-input">
+          <h6>Enter your fasting serum insulin level (mu U/ml)</h6>
+          <input
+            type="number"
+            name="insulin"
+            min="0"
+            max="415"
+            step="1"
+            placeholder="Enter the insulin level"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- BMI -->
+        <div class="form-input">
+          <h6>What is your current BMI (Body Mass Index)? (kg/m²)</h6>
+          <input
+            type="number"
+            name="bmi"
+            min="18.2"
+            max="55"
+            step="1"
+            placeholder="Enter the BMI"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- Diabetes Pedigree Function -->
+        <div class="form-input">
+          <h6>Please provide your Diabetes Pedigree Function score</h6>
+          <input
+            type="number"
+            name="diabetes_pedigree"
+            min="0"
+            max="2"
+            step="0.01"
+            placeholder="Enter the Diabetes Pedigree score"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- Age -->
+        <div class="form-input">
+          <h6>How old are you?</h6>
+          <input
+            type="number"
+            name="age"
+            min="21"
+            max="68"
+            step="1"
+            placeholder="Enter your age"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- Predict Button -->
+        <div class="form-input">
+          <input
+            type="submit"
+            value="Get Prediction"
+            class="btn btn-primary predict-button"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
