@@ -75,7 +75,7 @@ While for the Streamlit app, after running the streamlitApp.py file, the app sho
 
 ## How to Use
 
-1. Navigate to the [Prediction Page](http://localhost:5000/predictdata).
+1. Navigate to the Prediction Page.
 2. Enter your health data, including pregnancies, glucose level, blood pressure, skin thickness, insulin level, BMI, diabetes pedigree function score, and age.
 3. Click the "Get Prediction" button to receive your real-time diabetes risk prediction.
 
@@ -96,9 +96,11 @@ The features required for diabetes risk prediction are as follows:
 
 For your convenience, you can download a sample dataset [here](https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset).
 
-## Real-time Demo
+## Real-time Demo for the Flask App
 
 https://github.com/Fortunatetech/Diabetes-Prediction-with-Deployment-Using-flask-streamlit-DVC/assets/104451288/7758d3e3-fdee-4b1a-8035-fb8c24f84a43
+
+## Real-time Demo for the Streamlit App
 
 ## Explore the Code
 
