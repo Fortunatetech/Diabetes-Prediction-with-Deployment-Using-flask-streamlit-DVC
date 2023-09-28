@@ -64,6 +64,12 @@ Before running the app, make sure you have the following prerequisites installed
    python app.py
    ```
 
+5. Run the Streamlit app:
+
+   ```bash
+   streamlit run streamlitApp.py
+   ```
+
 The app should now be running locally. You can access it in your web browser at `http://localhost:5000`.
 
 ## How to Use
