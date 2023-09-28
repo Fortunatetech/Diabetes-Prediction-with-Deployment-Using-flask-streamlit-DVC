@@ -101,6 +101,7 @@ For your convenience, you can download a sample dataset [here](https://www.kaggl
 https://github.com/Fortunatetech/Diabetes-Prediction-with-Deployment-Using-flask-streamlit-DVC/assets/104451288/7758d3e3-fdee-4b1a-8035-fb8c24f84a43
 
 ## Real-time Demo for the Streamlit App
+[streamlitapp demo.webm](https://github.com/Fortunatetech/Diabetes-Prediction-with-Deployment-Using-flask-streamlit-DVC/assets/104451288/df4bb618-fc71-45dc-925d-1f4a289c1b06)
 
 ## Explore the Code
 
