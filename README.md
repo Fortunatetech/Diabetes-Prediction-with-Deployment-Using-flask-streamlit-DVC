@@ -73,6 +73,8 @@ Before running the app, make sure you have the following prerequisites installed
 After running the flask app, the app file should now be running locally. You can access it in your web browser at `http://localhost:5000`.
 While for the Streamlit app, after running the streamlitApp.py file, the app should now be running locally. You can access it in your web browser at `http://localhost:8501`.
 
+[Checkout the streamlit app here ](https://diabetes-prediction-web-app.streamlit.app/)
+
 ## How to Use
 
 1. Navigate to the Prediction Page.
