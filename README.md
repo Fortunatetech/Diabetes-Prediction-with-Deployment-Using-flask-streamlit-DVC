@@ -70,7 +70,8 @@ Before running the app, make sure you have the following prerequisites installed
    streamlit run streamlitApp.py
    ```
 
-The app should now be running locally. You can access it in your web browser at `http://localhost:5000`.
+After running the flask app, the app file should now be running locally. You can access it in your web browser at `http://localhost:5000`.
+While for the Streamlit app, after running the streamlitApp.py file, the app should now be running locally. You can access it in your web browser at `http://localhost:8501`.
 
 ## How to Use
 
